@@ -14,6 +14,15 @@
     <Filter Include="KamataEngine\Adapter">
       <UniqueIdentifier>{c6468eb4-788b-4a83-b207-a5f4804e56c5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Class">
+      <UniqueIdentifier>{23837902-b62b-4438-92f8-342d45db84c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Scene">
+      <UniqueIdentifier>{511c7914-a6ea-4ccd-a743-92c8dfe59d6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Shooting">
+      <UniqueIdentifier>{28ddf109-999b-455b-8410-f114135e7d75}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\DirectXCommon.cpp">
@@ -37,6 +46,30 @@
     </ClCompile>
     <ClCompile Include="C:\KamataEngine\DirectXGame\base\StringUtility.cpp">
       <Filter>KamataEngine\Source</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\GameManager.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\InputManager.cpp">
+      <Filter>Class</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Scene\TitleScene.cpp">
+      <Filter>Class\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Scene\ClearScene.cpp">
+      <Filter>Class\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Scene\StageScene.cpp">
+      <Filter>Class\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Shooting\Player.cpp">
+      <Filter>Class\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Shooting\Enemy.cpp">
+      <Filter>Class\Shooting</Filter>
+    </ClCompile>
+    <ClCompile Include="Class\Shooting\Bullet.cpp">
+      <Filter>Class\Shooting</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -110,6 +143,33 @@
     <ClInclude Include="C:\KamataEngine\DirectXGame\2d\ImGuiManager.h" />
     <ClInclude Include="C:\KamataEngine\DirectXGame\base\StringUtility.h">
       <Filter>KamataEngine\Include</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Scene\IScene.h">
+      <Filter>Class\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\GameManager.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\InputManager.h">
+      <Filter>Class</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Scene\TitleScene.h">
+      <Filter>Class\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Scene\ClearScene.h">
+      <Filter>Class\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Scene\StageScene.h">
+      <Filter>Class\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Shooting\Player.h">
+      <Filter>Class\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Shooting\Bullet.h">
+      <Filter>Class\Shooting</Filter>
+    </ClInclude>
+    <ClInclude Include="Class\Shooting\Enemy.h">
+      <Filter>Class\Shooting</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
