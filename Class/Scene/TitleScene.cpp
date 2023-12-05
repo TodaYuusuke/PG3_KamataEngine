@@ -1,17 +1,25 @@
 #pragma once
 #include "TitleScene.h"
-#include "StageScene.h"
 
 void TitleScene::Init() {
+	inputHandler_ = new InputHandler();
+	// Assign Command
+	inputHandler_->AssignMoveRightCommand2PressKeyD();
+	inputHandler_->AssignMoveLeftCommand2PressKeyA();
 
+	player_ = new Player();
+	player_->Init();
 };
 void TitleScene::Update() {
-	if (InputManager::GetInstance()->InputManager::GetKeyTrigger(DIK_SPACE)) {
-		nextScene_ = new StageScene();
+	iCommand_ = inputHandler_->HandleInput();
+
+	// Set Command
+	if (this->iCommand_) {
+		iCommand_->Exec(*player_);
 	}
+
+	player_->Update();
 };
 void TitleScene::Draw() {
-	// タイトル表示
-	Novice::ScreenPrintf(100, 100, "Title Scene");
-	Novice::ScreenPrintf(100, 120, "Space ... Start");
+	player_->Draw();
 };

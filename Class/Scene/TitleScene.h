@@ -1,6 +1,10 @@
 #pragma once
 #include "IScene.h"
 
+#include "../Player/Player.h"
+#include "../Command/ICommand.h"
+#include "../Command/InputHandler.h"
+
 /// <summary>
 /// タイトル
 /// </summary>
@@ -16,4 +20,8 @@ public: // ** メンバ関数 ** //
 
 
 private: // ** メンバ変数 ** //
+
+	InputHandler* inputHandler_ = nullptr;
+	ICommand* iCommand_ = nullptr;
+	Player* player_;
 };

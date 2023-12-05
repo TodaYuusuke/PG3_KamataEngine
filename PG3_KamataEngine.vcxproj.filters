@@ -20,8 +20,11 @@
     <Filter Include="Class\Scene">
       <UniqueIdentifier>{511c7914-a6ea-4ccd-a743-92c8dfe59d6f}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Class\Shooting">
+    <Filter Include="Class\Player">
       <UniqueIdentifier>{28ddf109-999b-455b-8410-f114135e7d75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Class\Command">
+      <UniqueIdentifier>{1c9e7881-969d-4fce-92c0-bdcdb2bb794a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -56,20 +59,14 @@
     <ClCompile Include="Class\Scene\TitleScene.cpp">
       <Filter>Class\Scene</Filter>
     </ClCompile>
-    <ClCompile Include="Class\Scene\ClearScene.cpp">
-      <Filter>Class\Scene</Filter>
+    <ClCompile Include="Class\Player\Player.cpp">
+      <Filter>Class\Player</Filter>
     </ClCompile>
-    <ClCompile Include="Class\Scene\StageScene.cpp">
-      <Filter>Class\Scene</Filter>
+    <ClCompile Include="Class\Command\ICommand.cpp">
+      <Filter>Class\Command</Filter>
     </ClCompile>
-    <ClCompile Include="Class\Shooting\Player.cpp">
-      <Filter>Class\Shooting</Filter>
-    </ClCompile>
-    <ClCompile Include="Class\Shooting\Enemy.cpp">
-      <Filter>Class\Shooting</Filter>
-    </ClCompile>
-    <ClCompile Include="Class\Shooting\Bullet.cpp">
-      <Filter>Class\Shooting</Filter>
+    <ClCompile Include="Class\Command\InputHandler.cpp">
+      <Filter>Class\Command</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -156,20 +153,14 @@
     <ClInclude Include="Class\Scene\TitleScene.h">
       <Filter>Class\Scene</Filter>
     </ClInclude>
-    <ClInclude Include="Class\Scene\ClearScene.h">
-      <Filter>Class\Scene</Filter>
+    <ClInclude Include="Class\Player\Player.h">
+      <Filter>Class\Player</Filter>
     </ClInclude>
-    <ClInclude Include="Class\Scene\StageScene.h">
-      <Filter>Class\Scene</Filter>
+    <ClInclude Include="Class\Command\ICommand.h">
+      <Filter>Class\Command</Filter>
     </ClInclude>
-    <ClInclude Include="Class\Shooting\Player.h">
-      <Filter>Class\Shooting</Filter>
-    </ClInclude>
-    <ClInclude Include="Class\Shooting\Bullet.h">
-      <Filter>Class\Shooting</Filter>
-    </ClInclude>
-    <ClInclude Include="Class\Shooting\Enemy.h">
-      <Filter>Class\Shooting</Filter>
+    <ClInclude Include="Class\Command\InputHandler.h">
+      <Filter>Class\Command</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

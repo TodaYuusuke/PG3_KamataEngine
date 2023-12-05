@@ -1,9 +1,5 @@
 #pragma once
 #include "Vector2.h"
-#include "Bullet.h"
-
-// 前方宣言
-class Enemy;
 
 class Player final {
 public: // ** メンバ関数 ** //
@@ -11,15 +7,19 @@ public: // ** メンバ関数 ** //
 	// 初期化
 	void Init();
 	// 初期化
-	void Update(Enemy* enemy);
+	void Update();
 	// 初期化
 	void Draw();
 
+	// 操作系メンバ関数
+	void MoveRight();
+	void MoveLeft();
 
 private: // ** メンバ変数 ** //
 
+	// 速度
+	const float kMoveSpeed_ = 3.0f;
+
 	// 座標
 	Vector2 position_;
-	// 弾
-	Bullet bullet_;
 };
